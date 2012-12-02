@@ -41,6 +41,18 @@ function parseSOPs(sops) {
   haveSOPs = true;
 }
 
+function submit()
+{
+
+now=document.getElementById("now").value;
+next=document.getElementById("next").value;
+
+if((next=="")&&(now==""))
+{alert("Please fill out the field."); return;}
+
+//
+}
+
 function cleanSOPName(aSOP) {
   return aSOP.substring(aSOP.lastIndexOf("/")+1);
 }
